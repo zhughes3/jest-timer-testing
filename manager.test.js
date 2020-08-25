@@ -18,6 +18,7 @@ test("cacheEntry gets deleted", async () => {
 
     // part 3: test that cache entry has been deleted after expiration time has passed
     jest.advanceTimersByTime(expirationDurationSeconds * 1000) // forceExpiration
+    await Promise.resolve()
 
     let expiredCacheValue = await Manager.getKey(cacheEntry.key)
     // since the expire event never gets emitted, and the expire function never runs,
