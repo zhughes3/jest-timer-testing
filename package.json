@@ -10,6 +10,7 @@
     "jest": "=24.9.0"
   },
   "dependencies": {
-    "node-cache": "^4.2.0"
+    "node-cache": "^4.2.0",
+    "promise": "^8.1.0"
   }
 }

@@ -1,3 +1,5 @@
+global.Promise = require('promise')
+
 const Manager = require ('./Manager')
 
 jest.useFakeTimers()
